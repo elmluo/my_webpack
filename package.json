@@ -1,0 +1,28 @@
+{
+  "name": "my_webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.27.3",
+    "eventsource-polyfill": "^0.9.6",
+    "express": "^4.15.2",
+    "friendly-errors-webpack-plugin": "^1.6.1",
+    "html-loader": "^0.4.5",
+    "html-webpack-plugin": "^2.28.0",
+    "http-proxy-middleware": "^0.17.4",
+    "less": "^2.7.2",
+    "less-loader": "^3.0.0",
+    "opn": "^4.0.2",
+    "style-loader": "^0.14.1",
+    "webpack": "^2.2.1",
+    "webpack-dev-middleware": "^1.10.1",
+    "webpack-hot-middleware": "^2.17.1",
+    "webpack-merge": "^4.1.0"
+  }
+}

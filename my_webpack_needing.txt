@@ -1,0 +1,40 @@
+webpack.base.conf.js need require
+    path
+    entry
+    output
+    module->rules(test and loaders)
+        babel-loader()
+
+webpack.dev.conf.js need require
+
+    webpack
+    webpack-merge
+    webpack.base.conf.js
+    html-webpack-plugins
+    friendly-errors-webpack-plugin
+    Objent.keys([]).forEach(callback(curVal, index, array))
+
+dev-server.js
+    ./check-version.js
+    ../config
+    ./webpack.prod.conf.js
+    ./webpack.dev.conf.js
+    opn
+    path
+    express
+    http-proxy-middleware
+
+config 关于开发、生产压缩、测试；环境的变量配置
+    developEnviroment.js
+        webpack-merge
+        ./prod.env
+
+    index.js(服务端入口配置文件)
+        build:
+            ./productEnvironment.js 生产环境，打包压缩
+        dev:
+            ./developEnviroment.js 开发环境
+
+main.js
+    首先要将main.bundle.js插入body体中，如果插入head里面，下面代码找不到该对象。
+    document.getElementById('body')
