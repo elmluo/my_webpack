@@ -17,7 +17,7 @@ var webpackConfig = process.env.NODE_ENV === 'testing'
 
 
 // dev服务器监听通讯的默认端口
-var port = process.env.PORT || config.dev.env.port;
+var port = process.env.PORT || config.dev.port;
 // 自动打开浏览器，如果没有设置false
 var autoOpenBrowser = !!config.dev.autoOpenBrowser;
 // 为你的客户端API定义HTTP请求代理。
@@ -32,7 +32,7 @@ var devMiddleware = webpackDevMiddleware(compiler, {
     quiet: true
 });
 
-var hotMiddleware = webpackHotMiddleware(compiler, {
+var hotMiddleware = wepbackHotMiddleware(compiler, {
    log: function(){}
 });
 
@@ -67,7 +67,7 @@ var staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsS
 app.use(staticPath, express.static('./static'));
 
 
-var uri = 'http://localhost:' + port
+var uri = 'http://localhost:' + port;
 
 devMiddleware.waitUntilValid(function () {
     console.log('> Listening at ' + uri + '\n')
